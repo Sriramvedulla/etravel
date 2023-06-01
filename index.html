@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Travel Management</title>
+    <style>
+      .form1 {
+        width: 80%;
+        background-color: #74b14e;
+        padding: 10px;
+        margin-left: 10%;
+      }
+      h2 {
+        text-align: center;
+        color: #c21807;
+        background-color: #fff;
+        width: 98%;
+        border-radius: 6px;
+      }
+      td {
+        border: 1px solid gainsboro;
+        background-color: rgb(11, 126, 172);
+        border-radius: 6px;
+        height: 20px;
+        color: #fff;
+      }
+      table {
+        width: 96%;
+        border: 2px solid white;
+        padding: 4px;
+        margin-left: 7px;
+        border-radius: 6px;
+      }
+      #travel_info, #personal_info, #preferences_info {
+        color: #fff;
+      }
+      #travel,#personal, #preferences {
+        color: #c21807;
+      }
+      #offers {
+        color: #fff;
+      }
+      #cname, #phno, #email, #destination {
+        width: 98%;
+        margin-left: 2px;
+      }
+      #kids, #teens, #adults, #dateofdeparture, #dateofarrival {
+        width: 97%;
+      }
+      #submit {
+        margin-top: 25px;
+        margin-left: 10px;
+        border: 1px solid black;
+        padding: 4px;
+        color: red;
+        font-weight:bold;
+        border-radius: 6px;
+      }
+      #submit:hover {
+        background-color: #c21807;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" class="form1">
+      <h2>ELITE TRAVEL MANAGEMENT</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><a href="#travel" id="travel_info">Travel-info</a></td>
+            <td><a href="#personal" id="personal_info">Perssonal-info</a></td>
+            <td><a href="#preferences" id="preferences_info">Activities Preferences</a></td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <label id="travel">Travel Information</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="destination" name="desti"></label>
+                Select your travel destination:
+              </label>
+              <br />
+              <select name="desti" id="destination">
+                <option value="Select">Select</option>
+                <option value="london">London</option>
+                <option value="canada">Canada</option>
+                <option value="mauritius">Mauritius</option>
+                <option value="switzerland">Switzerland</option>
+              </select>
+            </td>
+            <td>
+              <label for="dateofdeparture">Date of departure:</label>
+              <br />
+              <input type="date" id="dateofdeparture">
+            </td>
+            <td>
+              <label for="dateofarrival">Date of arrival</label>
+              <br />
+              <input type="date" id="dateofarrival">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="kids"></label>
+              <input type="text" id="kids" placeholder="No of kids">
+            </td>
+            <td>
+              <label for="teens"></label>
+              <input type="text" id="teens" placeholder="No of teens">
+            </td>
+            <td>
+              <label for="adults"></label>
+              <input type="text" id="adults" placeholder="No of adults">
+            </td>
+          </tr>
+          <tr>
+            <td>visa Assitance</td>
+            <td>
+              <input type="radio" id="yes" name="visa">
+              <label for="yes">Yes</label>
+            </td>
+            <td>
+              <input type="radio" id="no" name="visa">
+              <label for="no">No</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <label id="personal">Personal Information</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="cname">Customer Name</label>
+            </td>
+            <td colspan="2">
+              <input type="text" id="cname" placeholder="Enter the customer name ">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phno">Phone Number</label>
+            </td>
+            <td colspan="2">
+              <input type="tel" id="phno" placeholder="Enter the phone number">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email</label>
+            </td>
+            <td colspan="2">
+              <input type="email" id="email" placeholder="Enter the email id">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <label id="preferences">Activites Preferences</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="museumsandhistoricsites" name="charges">
+              <label for="museumsandhistoricsites">Museum and Historic Sites</label>
+            </td>
+            <td>
+              <input type="checkbox" id="culture" name="charges">
+              <label for="culture">Culture</label>
+            </td>
+            <td>
+              <input type="checkbox" id="beaches" name="charges">
+              <label for="beaches">Beaches</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="shopping" name="charges">
+              <label for="shopping">Shopping</label>
+            </td>
+            <td>
+              <input type="checkbox" id="wildlife" name="charges">
+              <label for="wildlife">Wildlife</label>
+            </td>
+            <td>
+              <input type="checkbox" id="relaxing" name="charges">
+              <label for="relaxing">Relaxing</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <a href="#submit" id="offers">**Click here to unlock exclusive offers</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="button" id="submit" value="BUILD PACKAGE" />
+    </form>
+  </body>
+</html>
